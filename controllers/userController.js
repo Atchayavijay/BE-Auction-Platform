@@ -22,13 +22,9 @@ export const register = catchAsyncErrors(async (req, res, next) => {
     email,
     password,
     phone,
-    // address,
+  
     role,
-    // bankAccountNumber,
-    // bankAccountName,
-    // bankName,
-    // easypaisaAccountNumber,
-    // paypalEmail,
+    
   } = req.body;
 
   if (!userName || !email || !phone || !password  || !role) {
