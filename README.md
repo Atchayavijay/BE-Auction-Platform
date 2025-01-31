@@ -1,7 +1,7 @@
 
-# Password Reset Flow
+# Auction Platform
    
-user authentication and authorization using Bearer tokens in a Node.js application with Express.js, Mongoose, and JWT.
+user Signup, Login, Auctions and Bidding using tokens in a Node.js application with Express.js, Mongoose, and JWT.
 
 ## Key Features
 
@@ -10,29 +10,6 @@ user authentication and authorization using Bearer tokens in a Node.js applicati
 - *Secure routes protected by Bearer token authentication* 
 - *Fully documented API using Postman* 
 - *Detailed error handling and validation*
-
-  
-## Screenshots
-
-![Signup](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/Signup.png?raw=true)
-
-![Login](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/Login.png?raw=true)
-
-![Logout](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/Logout.png?raw=true)
-
-![PasswordReset](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/ResetPassword.png?raw=true)
-
-![verify-email](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/VerifyEmail.png?raw=true)
-
-![Forgot-Password](https://github.com/Atchayavijay/Backend-Password-Reset/blob/main/Results/forgotpassword.png?raw=true)
-
-## Demo
-
-Password-Reset-Demo
-
-
-https://github.com/user-attachments/assets/22aff33a-4949-4f56-8e38-ad629980e1cc
-
 
 # Installation
 
@@ -46,7 +23,6 @@ https://github.com/user-attachments/assets/22aff33a-4949-4f56-8e38-ad629980e1cc
      mkdir server.js
      
      npm init
-
 
 
 #### Packages to be installed
@@ -67,6 +43,68 @@ https://github.com/user-attachments/assets/22aff33a-4949-4f56-8e38-ad629980e1cc
      bash npm install jsonwebtoken
 
 
+#### Frontend and Backend
+
+1. Navigate to the `frontend` directory:
+
+    ```bash
+    cd frontend
+    ```
+
+    ```bash
+    cd backend
+    ```
+
+2. Install dependencies:
+
+    ```bash
+    npm install
+    ```
+
+    ### Backend
+
+1. Start the backend server:
+
+    ```bash
+    npm run dev
+    ```
+
+    The backend will run on [http://localhost:5000](http://localhost:5000).
+
+### Frontend
+
+1. Start the frontend development server:
+
+    ```bash
+    npm run dev
+    ```
+    The frontend will run on [http://localhost:5173](http://localhost:5173).
+
+
+  
+## Screenshots
+
+![Signup](https://github.com/Atchayavijay/FE-Auction-Platform/blob/main/Result%20SS/Register.png)
+
+![Login](https://github.com/Atchayavijay/FE-Auction-Platform/blob/main/Result%20SS/Login.png)
+
+![AuctionPage](https://github.com/Atchayavijay/FE-Auction-Platform/blob/main/Result%20SS/AuctionPage.png)
+
+![LeaderPage](https://github.com/Atchayavijay/FE-Auction-Platform/blob/main/Result%20SS/LeaderBoard.png)
+
+![Winner Email Message](https://github.com/Atchayavijay/FE-Auction-Platform/blob/main/Result%20SS/Email%20Msg.png)
+
+
+## Demo - Auction Platform
+
+# Signup and Auction
+
+https://github.com/user-attachments/assets/14a7174e-2c06-4fda-b468-a9cc855d85be
+
+# SignUp and Bidding
+
+https://github.com/user-attachments/assets/18c1f745-b0e9-4ff3-ac8c-066b25beeb6e
+
 
 ## API'S
 
@@ -74,35 +112,29 @@ https://github.com/user-attachments/assets/22aff33a-4949-4f56-8e38-ad629980e1cc
 #### Own Api
 #### Register
 http
-https://backend-password-reset-10.onrender.com/auth/register
+https://be-auction-platform.onrender.com/api/v1/user/register
 
 #### Login
 http
-https://backend-password-reset-10.onrender.com/auth/login
+https://be-auction-platform.onrender.com/api/v1/user/login
 
-#### Data
+#### Auction
 http
-https://backend-password-reset-10.onrender.com/auth/me
+https://be-auction-platform.onrender.com/api/v1/user/auctions
+
+#### Leaderboard
+http
+https://be-auction-platform.onrender.com/api/v1/user/leaderboard
 
 
 
-## Running Tests
+## Deployment FRONTEND-URL
 
-To run tests, run the following command
-
-bash
-  npm run dev
-
-bash
-  npm run start
+https://auctionplatformproject.netlify.app
 
 ## Deployment BACKEND-URL
 
-https://frontend-password-reset.netlify.app
-
-## Deployment BACKEND-URL
-
-https://backend-password-reset-10.onrender.com
+https://be-auction-platform.onrender.com
 
 
 ## Badges
@@ -133,5 +165,3 @@ Any additional information goes here
 
 ## 🚀 About Me
 I'm a full stack Web developer...
-
-
