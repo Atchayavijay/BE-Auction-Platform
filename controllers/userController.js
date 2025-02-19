@@ -22,7 +22,6 @@ export const register = catchAsyncErrors(async (req, res, next) => {
     email,
     password,
     phone,
-  
     role,
     
   } = req.body;
@@ -96,6 +95,7 @@ export const logout = catchAsyncErrors(async (req, res, next) => {
     .cookie("token", "", {
       expires: new Date(Date.now()),
       httpOnly: true,
+      sameSite: "none",
     })
     .json({
       success: true,
